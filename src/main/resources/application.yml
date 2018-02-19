@@ -1,0 +1,22 @@
+refresh-time: 10
+min-time: 1
+max-time: 10
+
+server:
+  port: 8000
+
+custom:
+  authentication: BASIC
+  connectors:
+    - host: localhost
+      port: 8000
+      type: internal
+    - host: localhost
+      port: 9000
+      type: external
+
+logging:
+  level:
+    com.sudhar.example: DEBUG
+
+
